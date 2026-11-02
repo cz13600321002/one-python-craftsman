@@ -21,6 +21,20 @@
 
 『Python 工匠』这个系列文章，是我的一次小小尝试。它专注于分享 Python 编程中的一些偏 **『小』** 的东西。希望能够帮到每一位编程路上的匠人。
 
+## 如何跑通（冒烟测试）
+
+本仓库以 Markdown 文章为主，没有可执行的应用入口。配套的冒烟测试用于校验 `zh_CN/` 下文章是否齐全、README 中的本地链接是否有效。
+
+**环境要求：** Python 3.9 及以上。
+
+**一条命令跑通：**
+
+```bash
+pip install -r requirements-dev.txt && python3 -m pytest
+```
+
+预期结果：终端输出若干个点（`.`）并以 `passed` 结束，退出码为 0。
+
 ## 文章列表
 
 - 1\. <del>善用变量改善代码质量</del> [[图书版：变量与注释](https://www.piglei.com/book/ch01_variables.html)]
